@@ -12,9 +12,9 @@
   background: @red;
 
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     .OpenSans-Bold;
-    font-size: 50px;
+    font-size: 30px;
     color: @gray;
   }
   p {
@@ -52,6 +52,7 @@
   ul {
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
   }
 }
 
@@ -126,126 +127,35 @@
 
 @media @desktop {
   .about-us {
-    display: flex;
     flex-direction: row;
   }
 
   .about-us__general-info {
-    display: flex;
-    flex-direction: column;
     width: 635px;
-    min-height: 478px;
-    padding: 105px 75px 0 55px;
-    background: @red;
+
 
     h2 {
       margin-bottom: 40px;
-      .OpenSans-Bold;
       font-size: 50px;
-      color: @gray;
-    }
-    p {
-      display: inline;
-      position: relative;
-      .Roboto-Regular;
-      font-size: 16px;
-      line-height: 25px;
-      color: @gray;
-
-      &::first-letter {
-        float: left;
-        margin: 15px 25px;
-        .OpenSans-Bold;
-        font-size: 25px;
-        line-height: 40px;
-      }
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: 8px;
-        width: 45px;
-        height: 45px;
-        border: 2px solid @gray;
-        border-radius: 50%;
-      }
     }
   }
   .about-us__advantages {
-    background: @light-gray;
 
     ul {
-      display: flex;
       flex-direction: row;
+      padding-bottom: 0;
     }
   }
 
   .about-us__advantages-item {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    position: relative;
     width: 428px;
-    padding-left: 65px;
-
-    &--design {
-      &::before {
-          content: "";
-          display: block;
-          width: 48px;
-          height: 64px;
-          position: absolute;
-          top: 121px;
-          right: 70px;
-          background: url(@sprite) -165px -5px;
-        }
-    }
-
-    &--ideas {
-      &::before {
-          content: "";
-          display: block;
-          width: 48px;
-          height: 64px;
-          position: absolute;
-          top: 121px;
-          right: 70px;
-          background: url(@sprite) -75px -37px;
-        }
-    }
-
-    &--availability {
-      &::before {
-          content: "";
-          display: block;
-          width: 60px;
-          height: 65px;
-          position: absolute;
-          top: 121px;
-          right: 70px;
-          background: url(@sprite) -5px -37px;
-        }
-    }
 
     h2 {
       width: 238px;
-      margin: 120px 0 40px 0;
-      .OpenSans-Bold;
-      font-size: 24px;
-      line-height: 38px;
-      color: @violet;
     }
 
     p {
       width: 238px;
-      .Roboto-Regular;
-      font-size: 16px;
-      line-height: 25px;
-      color: @dark-gray;
-      margin: 0;
     }
   }
-
 }

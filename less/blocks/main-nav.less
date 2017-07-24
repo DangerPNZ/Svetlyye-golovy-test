@@ -10,7 +10,7 @@
   display: flex;
   padding-top: 43px;
   .Roboto-Light;
-  font-size: 14px;
+  font-size: 8px;
   text-transform: uppercase;
   color: @gray;
 
@@ -22,7 +22,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: 10px;
+      top: 0;
       left: 25px;
       width: 6px;
       height: 6px;
@@ -71,19 +71,19 @@
     position: absolute;
     top: 17px;
     left: 33px;
-    width: 35px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     background: @red;
-    box-shadow: 0 10px 0 0 @red;
+    box-shadow: 0 6px 0 0 @red;
   }
   &::after {
     content: "";
     display: block;
     position: absolute;
-    top: 37px;
+    top: 29px;
     left: 33px;
-    width: 35px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     background: @red;
   }
 
@@ -93,10 +93,10 @@
       content: "";
       display: block;
       position: absolute;
-      top: 27px;
+      top: 25px;
       left: 33px;
-      width: 35px;
-      height: 4px;
+      width: 20px;
+      height: 2px;
       transform: rotate(45deg);
       background: @red;
       box-shadow: none;
@@ -105,10 +105,10 @@
       content: "";
       display: block;
       position: absolute;
-      top: 27px;
+      top: 25px;
       left: 33px;
-      width: 35px;
-      height: 4px;
+      width: 20px;
+      height: 2px;
       transform: rotate(-45deg);
       background: @red;
     }
@@ -151,154 +151,45 @@
 
 
 @media @desktop {
-  .main-nav {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid @light-gray;
-  }
-
   .main-nav__paginator {
-    display: flex;
-    padding-top: 43px;
-    .Roboto-Light;
     font-size: 14px;
-    text-transform: uppercase;
-    color: @gray;
-
-    li {
-      position: relative;
-      padding-left: 50px;
 
       &::before {
-        content: "";
-        display: block;
-        position: absolute;
         top: 3px;
-        left: 25px;
-        width: 6px;
-        height: 6px;
-        transform: rotate(45deg);
-        border-top: 2px solid @red;
-        border-right: 2px solid @red;
       }
     }
-  }
 
-  .main-nav__mail {
-    position: relative;
-    width: 80px;
-    height: 60px;
-    margin: 20px 0 0 40px;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 16px;
-      position: absolute;
-      top: 21px;
-      left: 30px;
-      background: url(@sprite) -111px -111px;
-    }
-  }
   .main-nav__menu-btn {
-    position: relative;
-    width: 116px;
-    height: 60px;
-    margin: 20px 20px 20px 186px;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    z-index: 100;
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 17px;
-      left: 33px;
       width: 35px;
       height: 4px;
-      background: @red;
       box-shadow: 0 10px 0 0 @red;
     }
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
       top: 37px;
-      left: 33px;
       width: 35px;
       height: 4px;
-      background: @red;
     }
 
     &--nojs,
     &--active {
       &::before {
-        content: "";
-        display: block;
-        position: absolute;
         top: 27px;
-        left: 33px;
         width: 35px;
         height: 4px;
-        transform: rotate(45deg);
-        background: @red;
         box-shadow: none;
       }
       &::after {
-        content: "";
-        display: block;
-        position: absolute;
         top: 27px;
-        left: 33px;
         width: 35px;
         height: 4px;
-        transform: rotate(-45deg);
-        background: @red;
       }
     }
   }
 
   .main-nav__navigation {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 345px;
     min-height: 1012px;
-    padding: 110px 0 0 40px;
-    background: @light-gray;
-    &--nojs,
-    &--active {
-      display: block;
-    }
-
-    li {
-      margin-bottom: 30px;
-    }
-    a {
-      .Roboto-Bold;
-      font-size: 14px;
-      color: @red;
-      text-transform: uppercase;
-    }
-    a[href] {
-      color: @violet;
-    }
-    span {
-      .Roboto-Light;
-      font-size: 14px;
-      color: @violet;
-      text-transform: uppercase;
-    }
   }
 }

@@ -448,7 +448,6 @@ a {
 @media (min-width: 1920px) {
   .main-container {
     width: 1920px;
-    margin: 0 auto;
   }
 }
 .main-header {
@@ -464,7 +463,7 @@ a {
   background-size: cover;
 }
 .main-header h1 {
-  margin-top: 10px;
+  margin-top: 80px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -472,7 +471,7 @@ a {
   color: #ebeaea;
 }
 .main-header h2 {
-  margin: 15px 0 10px 0;
+  margin: 15px 0 50px 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -488,15 +487,7 @@ a {
 }
 @media (min-width: 1920px) {
   .main-header {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
     min-height: 1012px;
-    background: url("../img/backgrounds/header-bg.jpg");
   }
   .main-header h1 {
     margin-top: 300px;
@@ -504,22 +495,13 @@ a {
     font-weight: 700;
     font-style: normal;
     font-size: 100px;
-    color: #ebeaea;
   }
   .main-header h2 {
     margin: 15px 0 60px 0;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 50px;
-    color: #fff;
   }
   .main-header span {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 24px;
-    color: #fff;
   }
 }
 .main-nav {
@@ -538,7 +520,7 @@ a {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 14px;
+  font-size: 8px;
   text-transform: uppercase;
   color: #f0f3f2;
 }
@@ -550,7 +532,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 25px;
   width: 6px;
   height: 6px;
@@ -596,19 +578,19 @@ a {
   position: absolute;
   top: 17px;
   left: 33px;
-  width: 35px;
-  height: 4px;
+  width: 20px;
+  height: 2px;
   background: #f35145;
-  box-shadow: 0 10px 0 0 #f35145;
+  box-shadow: 0 6px 0 0 #f35145;
 }
 .main-nav__menu-btn::after {
   content: "";
   display: block;
   position: absolute;
-  top: 37px;
+  top: 29px;
   left: 33px;
-  width: 35px;
-  height: 4px;
+  width: 20px;
+  height: 2px;
   background: #f35145;
 }
 .main-nav__menu-btn--nojs::before,
@@ -616,10 +598,10 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 27px;
+  top: 25px;
   left: 33px;
-  width: 35px;
-  height: 4px;
+  width: 20px;
+  height: 2px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background: #f35145;
@@ -630,10 +612,10 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 27px;
+  top: 25px;
   left: 33px;
-  width: 35px;
-  height: 4px;
+  width: 20px;
+  height: 2px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background: #f35145;
@@ -675,157 +657,38 @@ a {
   text-transform: uppercase;
 }
 @media (min-width: 1920px) {
-  .main-nav {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: end;
-            justify-content: flex-end;
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid #f0f3f2;
-  }
   .main-nav__paginator {
-    display: -webkit-box;
-    display: flex;
-    padding-top: 43px;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 14px;
-    text-transform: uppercase;
-    color: #f0f3f2;
   }
-  .main-nav__paginator li {
-    position: relative;
-    padding-left: 50px;
-  }
-  .main-nav__paginator li::before {
-    content: "";
-    display: block;
-    position: absolute;
+  .main-nav__paginator::before {
     top: 3px;
-    left: 25px;
-    width: 6px;
-    height: 6px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    border-top: 2px solid #f35145;
-    border-right: 2px solid #f35145;
-  }
-  .main-nav__mail {
-    position: relative;
-    width: 80px;
-    height: 60px;
-    margin: 20px 0 0 40px;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-  .main-nav__mail::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 16px;
-    position: absolute;
-    top: 21px;
-    left: 30px;
-    background: url("../img/sprite/spritesheet.png") -111px -111px;
-  }
-  .main-nav__menu-btn {
-    position: relative;
-    width: 116px;
-    height: 60px;
-    margin: 20px 20px 20px 186px;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    z-index: 100;
   }
   .main-nav__menu-btn::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 17px;
-    left: 33px;
     width: 35px;
     height: 4px;
-    background: #f35145;
     box-shadow: 0 10px 0 0 #f35145;
   }
   .main-nav__menu-btn::after {
-    content: "";
-    display: block;
-    position: absolute;
     top: 37px;
-    left: 33px;
     width: 35px;
     height: 4px;
-    background: #f35145;
   }
   .main-nav__menu-btn--nojs::before,
   .main-nav__menu-btn--active::before {
-    content: "";
-    display: block;
-    position: absolute;
     top: 27px;
-    left: 33px;
     width: 35px;
     height: 4px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    background: #f35145;
     box-shadow: none;
   }
   .main-nav__menu-btn--nojs::after,
   .main-nav__menu-btn--active::after {
-    content: "";
-    display: block;
-    position: absolute;
     top: 27px;
-    left: 33px;
     width: 35px;
     height: 4px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    background: #f35145;
   }
   .main-nav__navigation {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 345px;
     min-height: 1012px;
-    padding: 110px 0 0 40px;
-    background: #f0f3f2;
-  }
-  .main-nav__navigation--nojs,
-  .main-nav__navigation--active {
-    display: block;
-  }
-  .main-nav__navigation li {
-    margin-bottom: 30px;
-  }
-  .main-nav__navigation a {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    color: #f35145;
-    text-transform: uppercase;
-  }
-  .main-nav__navigation a[href] {
-    color: #3c3950;
-  }
-  .main-nav__navigation span {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
-    color: #3c3950;
-    text-transform: uppercase;
   }
 }
 .about-us {
@@ -847,11 +710,11 @@ a {
   background: #f35145;
 }
 .about-us__general-info h2 {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 50px;
+  font-size: 30px;
   color: #f0f3f2;
 }
 .about-us__general-info p {
@@ -893,6 +756,7 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  padding-bottom: 100px;
 }
 .about-us__advantages-item {
   display: -webkit-box;
@@ -958,132 +822,31 @@ a {
 }
 @media (min-width: 1920px) {
   .about-us {
-    display: -webkit-box;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
   }
   .about-us__general-info {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
     width: 635px;
-    min-height: 478px;
-    padding: 105px 75px 0 55px;
-    background: #f35145;
   }
   .about-us__general-info h2 {
     margin-bottom: 40px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 50px;
-    color: #f0f3f2;
-  }
-  .about-us__general-info p {
-    display: inline;
-    position: relative;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 25px;
-    color: #f0f3f2;
-  }
-  .about-us__general-info p::first-letter {
-    float: left;
-    margin: 15px 25px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 40px;
-  }
-  .about-us__general-info p::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 8px;
-    width: 45px;
-    height: 45px;
-    border: 2px solid #f0f3f2;
-    border-radius: 50%;
-  }
-  .about-us__advantages {
-    background: #f0f3f2;
   }
   .about-us__advantages ul {
-    display: -webkit-box;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
+    padding-bottom: 0;
   }
   .about-us__advantages-item {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-flex: 1;
-            flex-grow: 1;
-    position: relative;
     width: 428px;
-    padding-left: 65px;
-  }
-  .about-us__advantages-item--design::before {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 64px;
-    position: absolute;
-    top: 121px;
-    right: 70px;
-    background: url("../img/sprite/spritesheet.png") -165px -5px;
-  }
-  .about-us__advantages-item--ideas::before {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 64px;
-    position: absolute;
-    top: 121px;
-    right: 70px;
-    background: url("../img/sprite/spritesheet.png") -75px -37px;
-  }
-  .about-us__advantages-item--availability::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 65px;
-    position: absolute;
-    top: 121px;
-    right: 70px;
-    background: url("../img/sprite/spritesheet.png") -5px -37px;
   }
   .about-us__advantages-item h2 {
     width: 238px;
-    margin: 120px 0 40px 0;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 38px;
-    color: #3c3950;
   }
   .about-us__advantages-item p {
     width: 238px;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 25px;
-    color: #5f727f;
-    margin: 0;
   }
 }
 .achievements ul {
@@ -1126,43 +889,10 @@ a {
 }
 @media (min-width: 1920px) {
   .achievements ul {
-    display: -webkit-box;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-            justify-content: center;
-  }
-  .achievements__item {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    margin: 0 5px;
-    padding: 115px 0 90px 0;
-  }
-  .achievements__value {
-    font-family: "Roboto Slab", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    color: #3c3950;
-  }
-  .achievements__description {
-    width: 295px;
-    padding-top: 15px;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 25px;
-    color: #3c3950;
-    text-align: center;
   }
 }
 .features {
@@ -1170,6 +900,7 @@ a {
   display: flex;
   -webkit-box-pack: end;
           justify-content: flex-end;
+  padding-top: 370px;
   margin-bottom: 160px;
   background: url("../img/backgrounds/table.jpg") no-repeat;
   background-size: contain;
@@ -1290,4 +1021,9 @@ a {
   font-size: 16px;
   line-height: 25px;
   color: #5f727f;
+}
+@media (min-width: 1920px) {
+  .features {
+    padding-top: 0;
+  }
 }
