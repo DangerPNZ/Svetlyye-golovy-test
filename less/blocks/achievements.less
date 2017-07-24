@@ -1,0 +1,68 @@
+.achievements {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.achievements__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 5px;
+  padding: 115px 0 90px 0;
+}
+
+.achievements__value {
+  .RobotoSlab-Bold;
+  font-size: 50px;
+  color: @violet;
+}
+
+.achievements__description {
+  width: 295px;
+  padding-top: 15px;
+  .Roboto-Light;
+  font-size: 24px;
+  line-height: 25px;
+  color: @violet;
+  text-align: center;
+}
+
+@media @desktop {
+  .achievements {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .achievements__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 5px;
+    padding: 115px 0 90px 0;
+  }
+
+  .achievements__value {
+    .RobotoSlab-Bold;
+    font-size: 50px;
+    color: @violet;
+  }
+
+  .achievements__description {
+    width: 295px;
+    padding-top: 15px;
+    .Roboto-Light;
+    font-size: 24px;
+    line-height: 25px;
+    color: @violet;
+    text-align: center;
+  }
+}
