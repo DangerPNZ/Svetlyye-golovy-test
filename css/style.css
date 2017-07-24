@@ -491,9 +491,6 @@ a {
   }
   .main-header h1 {
     margin-top: 300px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 100px;
   }
   .main-header h2 {
@@ -660,7 +657,7 @@ a {
   .main-nav__paginator {
     font-size: 14px;
   }
-  .main-nav__paginator::before {
+  .main-nav__paginator li::before {
     top: 3px;
   }
   .main-nav__menu-btn::before {
@@ -727,7 +724,10 @@ a {
   line-height: 25px;
   color: #f0f3f2;
 }
-.about-us__general-info p::first-letter {
+.about-us__general-info p::before {
+  content: "L";
+  display: block;
+  position: relative;
   float: left;
   margin: 15px 25px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -736,7 +736,7 @@ a {
   font-size: 25px;
   line-height: 40px;
 }
-.about-us__general-info p::before {
+.about-us__general-info p::after {
   content: "";
   display: block;
   position: absolute;

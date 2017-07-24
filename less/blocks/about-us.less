@@ -17,6 +17,7 @@
     font-size: 30px;
     color: @gray;
   }
+
   p {
     display: inline;
     position: relative;
@@ -25,15 +26,18 @@
     line-height: 25px;
     color: @gray;
 
-    &::first-letter {
+    &::before {
+      content: "L";
+      display: block;
+      position: relative;
       float: left;
       margin: 15px 25px;
       .OpenSans-Bold;
       font-size: 25px;
       line-height: 40px;
     }
-
-    &::before {
+    
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -65,6 +69,7 @@
   padding-left: 65px;
 
   &--design {
+
     &::before {
         content: "";
         display: block;
@@ -78,6 +83,7 @@
   }
 
   &--ideas {
+
     &::before {
         content: "";
         display: block;
@@ -91,6 +97,7 @@
   }
 
   &--availability {
+
     &::before {
         content: "";
         display: block;
@@ -123,16 +130,14 @@
 }
 
 
-
-
 @media @desktop {
+
   .about-us {
     flex-direction: row;
   }
 
   .about-us__general-info {
     width: 635px;
-
 
     h2 {
       margin-bottom: 40px;

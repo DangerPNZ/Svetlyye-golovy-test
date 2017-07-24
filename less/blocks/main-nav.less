@@ -76,6 +76,7 @@
     background: @red;
     box-shadow: 0 6px 0 0 @red;
   }
+
   &::after {
     content: "";
     display: block;
@@ -89,6 +90,7 @@
 
   &--nojs,
   &--active {
+
     &::before {
       content: "";
       display: block;
@@ -101,6 +103,7 @@
       background: @red;
       box-shadow: none;
     }
+
     &::after {
       content: "";
       display: block;
@@ -124,6 +127,7 @@
   min-height: 450px;
   padding: 110px 0 0 40px;
   background: @light-gray;
+
   &--nojs,
   &--active {
     display: block;
@@ -132,15 +136,18 @@
   li {
     margin-bottom: 30px;
   }
+
   a {
     .Roboto-Bold;
     font-size: 14px;
     color: @red;
     text-transform: uppercase;
   }
+
   a[href] {
     color: @violet;
   }
+
   span {
     .Roboto-Light;
     font-size: 14px;
@@ -151,13 +158,16 @@
 
 
 @media @desktop {
+
   .main-nav__paginator {
     font-size: 14px;
 
+    li {
       &::before {
         top: 3px;
       }
     }
+  }
 
   .main-nav__menu-btn {
 
@@ -166,6 +176,7 @@
       height: 4px;
       box-shadow: 0 10px 0 0 @red;
     }
+
     &::after {
       top: 37px;
       width: 35px;
@@ -174,12 +185,14 @@
 
     &--nojs,
     &--active {
+
       &::before {
         top: 27px;
         width: 35px;
         height: 4px;
         box-shadow: none;
       }
+
       &::after {
         top: 27px;
         width: 35px;
